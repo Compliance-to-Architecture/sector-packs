@@ -6,9 +6,9 @@
  * in-process registry. Deterministic — same input → same parsed pack.
  *
  * Bound to:
- *   - Principle #34 (Zero Assumptions): validation against schema is
+ *   - Zero Assumptions (evidence-based): validation against schema is
  *     the gate that catches manifest drift
- *   - Principle #45 (WORM Audit): every pack load emits an audit entry
+ *   - WORM audit (per CONSTITUTION.md): every pack load emits an audit entry
  *     "sector_pack_loaded" so downstream tooling can prove what was
  *     active at a point in time
  */

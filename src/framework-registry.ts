@@ -14,12 +14,12 @@
  *     landing pages)
  *
  * Bound to:
- *   - Principle #24 (SSOT): one definition for every framework across
+ *   - Single Source of Truth (SSOT): one definition for every framework across
  *     all sector packs. Same framework cited by 2 packs (e.g. GDPR by
  *     legal + maritime) is ONE registry entry with multi-pack membership.
- *   - Principle #44 (8-Layer Spine): Frameworks live at Layer 4 (Manifest)
+ *   - Compliance-to-Architecture Graph (L0-L12, per CONSTITUTION.md): Frameworks live at Layer 4 (Manifest)
  *     wrapped in their containing Sector Pack.
- *   - Principle #41 (Zero Stubs): every entry references a real regulator
+ *   - Zero Stubs (every entry references real regulator material): every entry references a real regulator
  *     URL (validated by SectorPackSchema upstream).
  */
 import type { FrameworkCitation, SectorPack } from "./schema.js";
@@ -124,9 +124,8 @@ export function toSearchDoc(entry: FrameworkRegistryEntry): FrameworkSearchDoc {
  * Knowledge-graph node + edge emitter. Each framework becomes a node;
  * each (framework → pack) membership becomes an edge.
  *
- * Output shape matches the ReguNav `knowledge-engine` graph format
- * (`{ nodes: [...], edges: [...] }` in
- * `.claude/knowledge/graph.json`).
+ * Output shape is a generic property-graph (`{ nodes: [...], edges: [...] }`)
+ * — directly importable into any graph database or JSON-LD consumer.
  */
 export interface KnowledgeNode {
   readonly id: string;

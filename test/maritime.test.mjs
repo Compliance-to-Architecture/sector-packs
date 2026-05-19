@@ -3,7 +3,7 @@
  *
  * Validates that the canonical MARITIME_PACK manifest satisfies the
  * SectorPack Zod schema. Every framework citation MUST have a real
- * regulator URL (no placeholders per Principle #41).
+ * regulator URL (no placeholders per Zero-Stubs Principle).
  */
 import { test } from "node:test";
 import assert from "node:assert/strict";

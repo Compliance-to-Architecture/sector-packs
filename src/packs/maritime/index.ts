@@ -17,10 +17,10 @@
  *   - cyber (BIMCO Guidelines, IACS UR E26/E27)
  *
  * Bound to:
- *   - Principle #41 (Zero Stubs): every framework citation has a real
+ *   - Zero Stubs (every entry references real regulator material): every framework citation has a real
  *     regulator-published source URL. No placeholders. Verified by the
  *     no-stubs guard.
- *   - Principle #34 (Zero Assumptions): version + effective-date come
+ *   - Zero Assumptions (evidence-based): version + effective-date come
  *     from the regulator publication, not from memory.
  */
 import type { SectorPack } from "../../schema.js";

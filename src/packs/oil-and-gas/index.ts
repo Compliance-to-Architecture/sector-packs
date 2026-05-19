@@ -17,8 +17,8 @@
  * 7 / Aker BP / Equinor supplier requirements.
  *
  * Bound to:
- *   - Principle #41 (Zero Stubs): every framework has a real source URL
- *   - Principle #34 (Zero Assumptions): version + date from regulator
+ *   - Zero Stubs (every entry references real regulator material): every framework has a real source URL
+ *   - Zero Assumptions (evidence-based): version + date from regulator
  */
 import type { SectorPack } from "../../schema.js";
 

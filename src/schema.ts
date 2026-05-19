@@ -15,11 +15,11 @@
  * instead of "pick from 21 frameworks and 200 rule packs".
  *
  * Bound to:
- *   - Principle #44 (8-Layer Spine): SectorPack is a manifest envelope
+ *   - Compliance-to-Architecture Graph (L0-L12, per CONSTITUTION.md): SectorPack is a manifest envelope
  *     wrapping a curated bundle of Layer 1+2+3 entries
- *   - Principle #34 (Zero Assumptions): every framework / control / rule
+ *   - Zero Assumptions (evidence-based): every framework / control / rule
  *     citation is verifiable against the regulator's source-of-truth
- *   - Principle #41 (Zero Stubs): every framework entry MUST have a real
+ *   - Zero Stubs (every entry references real regulator material): every framework entry MUST have a real
  *     regulator-published source URL — no fake citations
  */
 import { z } from "zod";

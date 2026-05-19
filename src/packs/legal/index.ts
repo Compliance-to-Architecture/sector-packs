@@ -13,8 +13,8 @@
  *   touches in a single onboarding flow.
  *
  * Bound to:
- *   - Principle #41 (Zero Stubs): every framework has a real source URL
- *   - Principle #34 (Zero Assumptions): version / effective-date from
+ *   - Zero Stubs (every entry references real regulator material): every framework has a real source URL
+ *   - Zero Assumptions (evidence-based): version / effective-date from
  *     the regulator, not from memory
  */
 import type { SectorPack } from "../../schema.js";
