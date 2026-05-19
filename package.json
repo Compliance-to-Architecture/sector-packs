@@ -1,0 +1,29 @@
+{
+  "name": "@regunav/sector-packs-core",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "description": "Canonical Sector Pack schema + manifest registry + loader (Layer 1+2+3+4 bundle from the 8-Layer Spine — Profile + Rule Pack + Dictionary + Manifest assembled per vertical industry). One pack = one installable / billable / certifiable unit per sector. Maritime, hospitals, banking, etc. each ship as their own pack.",
+  "exports": {
+    ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" },
+    "./schema": { "types": "./dist/schema.d.ts", "import": "./dist/schema.js" },
+    "./loader": { "types": "./dist/loader.d.ts", "import": "./dist/loader.js" },
+    "./packs/maritime": { "types": "./dist/packs/maritime/index.d.ts", "import": "./dist/packs/maritime/index.js" }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json && cp -r packs dist/ 2>/dev/null || true",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test test/*.test.mjs",
+    "lint": "echo skip"
+  },
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@regunav/types": "workspace:*",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.2"
+  }
+}
